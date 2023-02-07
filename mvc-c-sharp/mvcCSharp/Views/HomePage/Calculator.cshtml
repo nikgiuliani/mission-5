@@ -1,0 +1,57 @@
+@{
+    ViewData["Title"] = "Calculator";
+}
+@model CalculatorModel;
+
+<!-- The calculator and the place to print results -->
+<div class="container px-4 px-lg-5" style="padding-bottom: 170px; padding-top: 20px">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+            <h2> Use this to calculate your grade in the class!</h2>
+            <div class="post-subtitle"> Enter in the values as whole-number percents (i.e. 90% -> 90): </div>
+            <br>
+            <div class="calculator-grid">
+                <div>
+                    <form class="calculator-percentages" method="post">
+                        <div>
+                            <label for="assignments">Assignments</label>
+                            <input id="assignments" asp-for="assignments" type="number" style="width: 140px;">
+                        </div>
+                        <div>
+                            <label for="project">Group Project</label>
+                            <input id="project" asp-for="project" type="number" style="width: 140px;">
+                        </div>
+                        <div>
+                            <label for="quizzes">Quizzes</label>
+                            <input id="quizzes" asp-for="quizzes" type="number" style="width: 140px;">
+                        </div>
+                        <div>
+                            <label for="midterm">Midterm Exam</label>
+                            <input id="midterm" asp-for="midterm" type="number" style="width: 140px;">
+                        </div>
+                        <div>
+                            <label for="final">Final</label>
+                            <input id="final" asp-for="final" type="number" style="width: 140px;">
+                        </div>
+                        <div>
+                            <label for="intex">INTEX</label>
+                            <input id="intex" asp-for="intex" type="number" style="width: 140px;">
+                        </div>
+                        <div>
+                            <button id="calcSubmit" type="submit"> Submit </button>
+                        </div>
+                    </form>
+                </div>
+                <div style="padding-left: 50px">
+                    <div> Grade: <span id="grade"> </span></div>
+                    <div>
+                        <div asp-validation-summary="All"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calculator -->
+            <script src="js/calculator.js"></script>
+        </div>
+    </div>
+</div>
