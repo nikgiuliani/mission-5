@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.810.25
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvc-c-sharp", "mvc-c-sharp\mvc-c-sharp.csproj", "{B4CBE3D0-5DDB-4E40-BD3A-CBEBBB8830E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvcCSharp", "mvcCSharp\mvcCSharp.csproj", "{B4CBE3D0-5DDB-4E40-BD3A-CBEBBB8830E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
